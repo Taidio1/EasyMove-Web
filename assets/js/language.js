@@ -26,7 +26,7 @@ const languages = {
       Lista3SE:"Rezerwację terminu do złożenia wniosku,",
       Lista4SE:"Wsparcie w procesie kompletowania dokumentów,",
       Lista5SE:"Wspólną wizytę w Urzędzie Wojewódzkim w celu złożenia wniosku pobytowego,",
-      Lista6SE:"Kontakt z Twoim pracodawcą w celu minimalizacji pojawienia się błędów oraz usprawnienia procesu kompletowania dokumentów,",
+      Lista6SE:"Kontakt z Twoim pracodawcą w celu minimalizacji pojawienia się błędów oraz usprawnienia procesu kompletowania dokumentów",
 
       Btn2SE:"Legalizacja Zatrudnienia",
       Tytul2SE:"Zapewniamy profesjonalną pomoc w procesie legalizacji zatrudnienia w Polsce, optymalizując czas procedury.",
@@ -35,7 +35,7 @@ const languages = {
       Lista9SE:"Optymalizację procedury aplikacji o wydanie informacji starosty,",
       Lista10SE:"Złożenie wniosku o wydanie zezwolenia na pracę,",
       Lista11SE:"Stały kontakt z inspektorem prowadzącym postępowanie w celu uzyskania informacji na temat toczącego się postępowania,",
-      Lista12SE:"Kontakt z Twoim pracownikiem w celu minimalizacji pojawienia się błędów oraz usprawnienia procesu kompletowania dokumentów,",
+      Lista12SE:"Kontakt z Twoim pracownikiem w celu minimalizacji pojawienia się błędów oraz usprawnienia procesu kompletowania dokumentów",
 
       OpisSE:"Nasze wsparcie obejmuje:",
       BtnMoreSE:"Sprawdź więcej",
@@ -74,7 +74,7 @@ const languages = {
       BtnWiadCO:"Wyślij wiadomość",
 
       //Footer
-      TelefonFO:"Telefon",
+      TelefonFO:"Telefon:",
       //Menu footer
       stronaglownaFO:"Strona główna",
       onasFO:"O Nas",
@@ -82,6 +82,7 @@ const languages = {
       zespolFO:"Zespół",
       politykaprivFO:"Polityka prywatności",
       //uslugi footer
+      tytulFO:"Usługi",
       LegPobFO:"Legalizacja pobytu",
       LegZatFO:"Legalizacja zatrudnienia",
       ZasFO:"Zaświadczenie o niekaralności",
@@ -126,7 +127,7 @@ const languages = {
       Lista9SE:"Optimization of the application procedure for issuing county official's information,",
       Lista10SE:"Submission of an application for a work permit,",
       Lista11SE:"Constant contact with the inspector conducting the proceedings to obtain information about the ongoing procedure,",
-      Lista12SE:"Contact with your employee to minimize errors and streamline the document compilation process,",
+      Lista12SE:"Contact with your employee to minimize errors and streamline the document compilation process",
 
       OpisSE:"Our support includes:",
       BtnMoreSE:"Check more",
@@ -165,7 +166,7 @@ const languages = {
       BtnWiadCO:"Send Message",
 
       //Footer
-      TelefonFO:"Phone",
+      TelefonFO:"Phone:",
       //Menu footer
       stronaglownaFO:"Home Page",
       onasFO:"About Us",
@@ -173,6 +174,7 @@ const languages = {
       zespolFO:"Team",
       politykaprivFO:"Privacy Policy",
       //uslugi footer
+      tytulFO:"Services",
       LegPobFO:"Residence Legalization",
       LegZatFO:"Employment Legalization",
       ZasFO:"Certificate of No Criminal Record",
@@ -187,7 +189,6 @@ const languages = {
 
 function updateTexts(language) {
   //Welocome Page
-  
   document.getElementById('Tytul').innerText = languages[language].Tytul;
   document.getElementById('slogan').innerText = languages[language].slogan;
   document.getElementById('btnPoznajNas').innerText = languages[language].btnPoznajNas;
@@ -202,8 +203,9 @@ function updateTexts(language) {
   document.getElementById('podtytulAU').innerText = languages[language].podtytulAU;
   document.getElementById('Opis1AU').innerText = languages[language].Opis1AU;
   document.getElementById('Opis2AU').innerText = languages[language].Opis2AU;
-  //Servieces
+  //Servieces 1
   document.getElementById('Btn1SE').innerText = languages[language].Btn1SE;
+  document.getElementById('Btn2SE').innerText = languages[language].Btn2SE;
   document.getElementById('Tytul1SE').innerText = languages[language].Tytul1SE;
   document.getElementById('Lista1SE').innerText = languages[language].Lista1SE;
   document.getElementById('Lista2SE').innerText = languages[language].Lista2SE;
@@ -211,8 +213,10 @@ function updateTexts(language) {
   document.getElementById('Lista4SE').innerText = languages[language].Lista4SE;
   document.getElementById('Lista5SE').innerText = languages[language].Lista5SE;
   document.getElementById('Lista6SE').innerText = languages[language].Lista6SE;
+  //Services 1 main
+  document.getElementById('OpisSE').innerText = languages[language].OpisSE;
+  document.getElementById('BtnMoreSE').innerText = languages[language].BtnMoreSE;
   //Servieces 2
-  document.getElementById('Btn2SE').innerText = languages[language].Btn2SE;
   document.getElementById('Tytul2SE').innerText = languages[language].Tytul2SE;
   document.getElementById('Lista7SE').innerText = languages[language].Lista7SE;
   document.getElementById('Lista8SE').innerText = languages[language].Lista8SE;
@@ -220,9 +224,10 @@ function updateTexts(language) {
   document.getElementById('Lista10SE').innerText = languages[language].Lista10SE;
   document.getElementById('Lista11SE').innerText = languages[language].Lista11SE;
   document.getElementById('Lista12SE').innerText = languages[language].Lista12SE;
-  //Services main
-  document.getElementById('OpisSE').innerText = languages[language].OpisSE;
-  document.getElementById('BtnMoreSE').innerText = languages[language].BtnMoreSE;
+  //Servieces 2 main
+  document.getElementById('Opis2SE').innerText = languages[language].OpisSE;
+  document.getElementById('BtnMore2SE').innerText = languages[language].BtnMoreSE;
+  
   //All Services
   document.getElementById('TytulAS').innerText = languages[language].TytulAS;
   document.getElementById('OpisAS').innerText = languages[language].OpisAS;
@@ -244,13 +249,12 @@ function updateTexts(language) {
   document.getElementById('Rola2TE').innerText = languages[language].Rola2TE;
   document.getElementById('Rola3TE').innerText = languages[language].Rola3TE;
   //Contact
-  document.getElementById('TytulCO').innerText = languages[language].TytulCO;
   document.getElementById('AdressCO').innerText = languages[language].AdressCO;
   document.getElementById('TelefonCO').innerText = languages[language].TelefonCO;
     //Formularz
-  document.getElementById('ImieiNazCO').innerText = languages[language].ImieiNazCO;
-  document.getElementById('TematCO').innerText = languages[language].TematCO;
-  document.getElementById('WiadomoscCO').innerText = languages[language].WiadomoscCO;
+  document.getElementById('name').placeholder = languages[language].ImieiNazCO;
+  document.getElementById('subject').placeholder = languages[language].TematCO;
+  document.getElementById('WiadomoscCO').placeholder = languages[language].WiadomoscCO;
   document.getElementById('BtnWiadCO').innerText = languages[language].BtnWiadCO;
   //Footer
   document.getElementById('TelefonFO').innerText = languages[language].TelefonFO;
@@ -261,6 +265,7 @@ function updateTexts(language) {
   document.getElementById('zespolFO').innerText = languages[language].zespolFO;
   document.getElementById('politykaprivFO').innerText = languages[language].politykaprivFO;
     //Uslugi Footer
+  document.getElementById('tytulFO').innerText = languages[language].tytulFO;
   document.getElementById('LegPobFO').innerText = languages[language].LegPobFO;
   document.getElementById('LegZatFO').innerText = languages[language].LegZatFO;
   document.getElementById('ZasFO').innerText = languages[language].ZasFO;
@@ -269,15 +274,10 @@ function updateTexts(language) {
   document.getElementById('NadanieObywFO').innerText = languages[language].NadanieObywFO;
 
 
-
-
-
-
-
-
 }
 document.getElementById('language-toggle').addEventListener('change', function() {
     const language = this.checked ? 'en' : 'pl';
+
     updateTexts(language);
   });
 
