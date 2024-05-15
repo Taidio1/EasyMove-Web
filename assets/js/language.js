@@ -277,14 +277,20 @@ function updateTexts(language) {
 }
 document.getElementById('language-toggle').addEventListener('change', function() {
     const language = this.checked ? 'en' : 'pl';
-
+    localStorage.setItem('preferredLanguage', language);
     updateTexts(language);
   });
 
   
   // Uaktualnij teksty na początkowy język (polski) po załadowaniu strony
-  window.onload = () => updateTexts('pl');
-
+  window.onload = () => {
+    // Odczytaj zapisany język, domyślnie 'pl' (polski)
+    const savedLanguage = localStorage.getItem('preferredLanguage') || 'pl';
+    updateTexts(savedLanguage);
+  
+    // Ustaw stan przełącznika zgodnie z zapisanym językiem
+    document.getElementById('language-toggle').checked = savedLanguage === 'en';
+  };
 
   //Opcja z przyciskiem
   /*
