@@ -247,15 +247,15 @@ function updateTexts(language) {
   document.getElementById('OpisTE').innerText = languages[language].OpisTE;
   document.getElementById('Rola1TE').innerText = languages[language].Rola1TE;
   document.getElementById('Rola2TE').innerText = languages[language].Rola2TE;
-  document.getElementById('Rola3TE').innerText = languages[language].Rola3TE;
+  //document.getElementById('Rola3TE').innerText = languages[language].Rola3TE;
   //Contact
-  document.getElementById('AdressCO').innerText = languages[language].AdressCO;
   document.getElementById('TelefonCO').innerText = languages[language].TelefonCO;
+  document.getElementById('AdressCO').innerText = languages[language].AdressCO;
     //Formularz
-  document.getElementById('name').placeholder = languages[language].ImieiNazCO;
-  document.getElementById('subject').placeholder = languages[language].TematCO;
-  document.getElementById('WiadomoscCO').placeholder = languages[language].WiadomoscCO;
-  document.getElementById('BtnWiadCO').innerText = languages[language].BtnWiadCO;
+    document.getElementById('name').placeholder = languages[language].ImieiNazCO;
+    document.getElementById('subject').placeholder = languages[language].TematCO;
+    document.getElementById('WiadomoscCO').placeholder = languages[language].WiadomoscCO;
+    document.getElementById('BtnWiadCO').innerText = languages[language].BtnWiadCO;
   //Footer
   document.getElementById('TelefonFO').innerText = languages[language].TelefonFO;
     //Menu Footer
