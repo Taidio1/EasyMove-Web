@@ -59,9 +59,9 @@ const languages = {
       //Team
       TytulTE:"TEAM",
       OpisTE:"Poznaj nasz zespół, gotowy służyć Ci profesjonalną pomocą i doświadczeniem w procesie legalizacji.",
-      Rola1TE:"Owner | Starszy Specjalista ds. legalizacji pobytu",
+      Rola1TE:"Owner | Specjalista ds. relokacji i imigracji",
       Rola2TE:"Młodsza Specjalistka ds. legalizacji pobytu",
-      Rola3TE:"Administrator systemów operacyjnych",
+      //Rola3TE:"Administrator systemów operacyjnych",
 
       //Contact
       TytulCO:"KONTAKT",
@@ -151,9 +151,9 @@ const languages = {
       //Team
       TytulTE:"TEAM",
       OpisTE:"Meet our team, ready to serve you with professional assistance and experience in the legalization process..",
-      Rola1TE:"Owner | Senior Residence Legalization Specialist",
+      Rola1TE:"Owner | Relocation and Immigration Specialist",
       Rola2TE:"Junior Residence Legalization Specialist",
-      Rola3TE:"Operating Systems Administrator",
+      //Rola3TE:"Operating Systems Administrator",
 
       //Contact
       TytulCO:"Contact",
@@ -248,6 +248,7 @@ function updateTexts(language) {
   document.getElementById('Rola1TE').innerText = languages[language].Rola1TE;
   document.getElementById('Rola2TE').innerText = languages[language].Rola2TE;
   //document.getElementById('Rola3TE').innerText = languages[language].Rola3TE;
+  
   //Contact
   document.getElementById('TelefonCO').innerText = languages[language].TelefonCO;
   document.getElementById('AdressCO').innerText = languages[language].AdressCO;

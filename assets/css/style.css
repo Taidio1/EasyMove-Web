@@ -9,6 +9,14 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+.WhiteNr{
+  color: white;
+}
+.WhiteNr:hover{
+  color: rgb(30, 87, 209);
+}
+
+
 .listalegpob li{
   margin-bottom: 5px
 }
@@ -18,7 +26,8 @@
 
 @media screen and (max-width: 765px) {
   .d-none{
-    display: none !important;
+    font-size: 15px !important;
+    padding-left: 10px !important;
   }
 }
 
@@ -46,6 +55,10 @@
 }
 
 /* Toggle Language Button*/
+.btntogle{
+  margin-right: 25px;
+}
+
 .switch {
   position: relative;
   display: inline-block;
@@ -105,12 +118,12 @@ input.check-toggle-round-flat + label {
   padding: 2px;
   width: 97px;
   height: 35px;
-  background-color: #ffffff;
-  -webkit-border-radius: 60px;
-  -moz-border-radius: 60px;
-  -ms-border-radius: 60px;
-  -o-border-radius: 60px;
-  border-radius: 60px;
+  background-color: #3583ae;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  border-radius: 50px;
 }
 input.check-toggle-round-flat + label:before, input.check-toggle-round-flat + label:after {
   display: block;
